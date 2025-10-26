@@ -1,8 +1,2 @@
-import Foundation
-let h = Int(readLine()!)!
-let w = Int(readLine()!)!
-if h > w {
-    print((w*100)/2)    
-} else {
-    print((h*100)/2)
-}
+let h=Int(readLine()!)!,w=Int(readLine()!)!,m=min(h,w)
+print(m*100/2)
