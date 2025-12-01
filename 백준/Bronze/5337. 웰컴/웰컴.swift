@@ -1,0 +1,4 @@
+import Foundation
+print(".  .   .")
+print("|  | _ | _. _ ._ _  _")
+print("|/\\|(/.|(_.(_)[ | )(/.")
