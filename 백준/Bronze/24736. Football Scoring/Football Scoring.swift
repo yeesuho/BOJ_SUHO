@@ -1,5 +1,1 @@
-import Foundation
-for _ in 1...2 {
-    let e=readLine()!.components(separatedBy: " ").map{Int($0)!}
-    print(e[0]*6+e[1]*3+e[2]*2+e[3]*1+e[4]*2, terminator: " ")
-}
+import Foundation;for _ in 1...2 {let e=readLine()!.components(separatedBy: " ").map{Int($0)!};print(e[0]*6+e[1]*3+e[2]*2+e[3]*1+e[4]*2, terminator: " ")}
