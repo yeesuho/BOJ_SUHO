@@ -1,0 +1,3 @@
+-- 코드를 입력하세요
+select fr.PRODUCT_ID, fr.PRODUCT_NAME, fr.PRICE * sum(fo.amount) from FOOD_PRODUCT fr, FOOD_ORDER fo where fr.PRODUCT_ID = fo.PRODUCT_ID and fo.PRODUCE_DATE >= date '2022-05-01' and fo.PRODUCE_DATE < date '2022-06-01' group by fr.PRODUCT_ID, fr.PRODUCT_NAME, fr.PRICE order by 3 desc, 1 asc
+-- select fr.PRODUCT_ID, fr.PRODUCT_NAME, fr.PRICE * fo.amount from FOOD_PRODUCT fr, FOOD_ORDER fo where fr.PRODUCT_ID = fo.PRODUCT_ID and fr.PRODUCT_ID in (select PRODUCT_ID from FOOD_ORDER where PRODUCE_DATE >= date '2022-05-01' and PRODUCE_DATE <= date '2022-05-30') order by 3 desc, 1 asc
