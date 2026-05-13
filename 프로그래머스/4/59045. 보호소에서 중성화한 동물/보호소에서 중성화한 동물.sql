@@ -1,0 +1,2 @@
+-- 코드를 입력하세요
+select ao.ANIMAL_ID, ao.ANIMAL_TYPE, ao.NAME from ANIMAL_OUTS ao, ANIMAL_INS ai where ao.ANIMAL_ID = ai.ANIMAL_ID and ai.SEX_UPON_INTAKE like 'Intact%' and (ao.SEX_UPON_OUTCOME like 'Neutered%' or ao.SEX_UPON_OUTCOME like 'Spayed%') order by 1
