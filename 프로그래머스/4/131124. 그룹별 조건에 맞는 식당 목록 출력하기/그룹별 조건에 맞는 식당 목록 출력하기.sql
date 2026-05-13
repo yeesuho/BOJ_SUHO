@@ -1,0 +1,2 @@
+-- 코드를 입력하세요
+select mp.MEMBER_NAME, rr.REVIEW_TEXT, to_char(rr.REVIEW_DATE, 'yyyy-mm-dd')  from MEMBER_PROFILE mp, REST_REVIEW rr where mp.MEMBER_ID = rr.MEMBER_ID and rr.MEMBER_ID in (select MEMBER_ID from REST_REVIEW group by MEMBER_ID having count(*) = (select max(count(*)) from REST_REVIEW group by MEMBER_ID)) order by 3 asc, 2 asc
